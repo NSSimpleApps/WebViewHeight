@@ -1,0 +1,27 @@
+body {
+    font-family:helvetica;
+    font-size:15px;
+    text-align:center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 99%;
+    padding: 5px;
+    /*text-align: center;*/
+    text-align: left;
+    table-layout: fixed;
+    margin-bottom: 5%;
+}
+
+img {
+
+	max-width: 95%;
+	height: auto;
+}
+
+*{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
