@@ -15,6 +15,7 @@
 		B5A097E61D2EB2EA00D05A28 /* UIWebView+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A097E51D2EB2EA00D05A28 /* UIWebView+Height.swift */; };
 		B5A097E81D2EB32100D05A28 /* common.css in Resources */ = {isa = PBXBuildFile; fileRef = B5A097E71D2EB32100D05A28 /* common.css */; };
 		B5A097EA1D2EB33100D05A28 /* doc.html in Resources */ = {isa = PBXBuildFile; fileRef = B5A097E91D2EB33100D05A28 /* doc.html */; };
+		B5A097EC1D2EBD9A00D05A28 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B5A097EB1D2EBD9A00D05A28 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B5A097E51D2EB2EA00D05A28 /* UIWebView+Height.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+Height.swift"; sourceTree = "<group>"; };
 		B5A097E71D2EB32100D05A28 /* common.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = common.css; sourceTree = "<group>"; };
 		B5A097E91D2EB33100D05A28 /* doc.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = doc.html; sourceTree = "<group>"; };
+		B5A097EB1D2EBD9A00D05A28 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		B5A097C51D2E891E00D05A28 = {
 			isa = PBXGroup;
 			children = (
+				B5A097EB1D2EBD9A00D05A28 /* README.md */,
 				B5A097D01D2E891E00D05A28 /* WebViewHeight */,
 				B5A097CF1D2E891E00D05A28 /* Products */,
 			);
@@ -148,6 +151,7 @@
 			files = (
 				B5A097E41D2EB24000D05A28 /* TableViewController.swift in Sources */,
 				B5A097D21D2E891E00D05A28 /* AppDelegate.swift in Sources */,
+				B5A097EC1D2EBD9A00D05A28 /* README.md in Sources */,
 				B5A097E61D2EB2EA00D05A28 /* UIWebView+Height.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +304,7 @@
 				B5A097E21D2E891E00D05A28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
