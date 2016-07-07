@@ -10,7 +10,6 @@ import UIKit
 
 extension UIWebView {
 
-
     func loadFileWithURL(URL: NSURL) throws {
     
         let string = try String(contentsOfURL: URL, encoding: NSUTF8StringEncoding)
@@ -23,7 +22,7 @@ extension UIWebView {
         if let string = self.stringByEvaluatingJavaScriptFromString("document.documentElement.offsetHeight"), let height = Float(string) {
         
             return CGFloat(height)
-    }
-    return 0
+        }
+        return 0
     }
 }
