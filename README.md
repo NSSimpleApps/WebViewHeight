@@ -1,5 +1,5 @@
 # WebViewHeight
-Height of UIWebView can be determine by JS.
+Height of UIWebView can be determined by JS.
 
 ```objc
 
