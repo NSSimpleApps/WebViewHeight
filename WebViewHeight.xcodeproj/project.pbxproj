@@ -15,7 +15,6 @@
 		B5A097E61D2EB2EA00D05A28 /* UIWebView+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A097E51D2EB2EA00D05A28 /* UIWebView+Height.swift */; };
 		B5A097E81D2EB32100D05A28 /* common.css in Resources */ = {isa = PBXBuildFile; fileRef = B5A097E71D2EB32100D05A28 /* common.css */; };
 		B5A097EA1D2EB33100D05A28 /* doc.html in Resources */ = {isa = PBXBuildFile; fileRef = B5A097E91D2EB33100D05A28 /* doc.html */; };
-		B5A097EC1D2EBD9A00D05A28 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B5A097EB1D2EBD9A00D05A28 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,11 +102,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = NSSimpleApps;
 				TargetAttributes = {
 					B5A097CD1D2E891E00D05A28 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -151,7 +151,6 @@
 			files = (
 				B5A097E41D2EB24000D05A28 /* TableViewController.swift in Sources */,
 				B5A097D21D2E891E00D05A28 /* AppDelegate.swift in Sources */,
-				B5A097EC1D2EBD9A00D05A28 /* README.md in Sources */,
 				B5A097E61D2EB2EA00D05A28 /* UIWebView+Height.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,8 +191,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -238,8 +239,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -258,6 +261,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -271,6 +275,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NSSimpleApps.WebViewHeight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -282,6 +287,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NSSimpleApps.WebViewHeight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -10,16 +10,16 @@ import UIKit
 
 extension UIWebView {
 
-    func loadFileWithURL(URL: NSURL) throws {
+    func loadFile(from url: URL) throws {
     
-        let string = try String(contentsOfURL: URL, encoding: NSUTF8StringEncoding)
+        let string = try String(contentsOf: url, encoding: String.Encoding.utf8)
     
-        self.loadHTMLString(string, baseURL: URL.URLByDeletingLastPathComponent)
+        self.loadHTMLString(string, baseURL: url.deletingLastPathComponent())
     }
 
     var documentHeight: CGFloat {
     
-        if let string = self.stringByEvaluatingJavaScriptFromString("document.documentElement.offsetHeight"), let height = Float(string) {
+        if let string = self.stringByEvaluatingJavaScript(from: "document.documentElement.offsetHeight"), let height = Float(string) {
         
             return CGFloat(height)
         }

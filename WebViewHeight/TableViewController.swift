@@ -10,50 +10,49 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
-    private var webViewHeight: CGFloat = 100
+    fileprivate var webViewHeight: CGFloat = 100
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 1
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = "Some cell"
 
         return cell
     }
     
-    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let URL = NSBundle.mainBundle().URLForResource("doc", withExtension: "html")
+        let url = Bundle.main.url(forResource: "doc", withExtension: "html")
         
         let webView = UIWebView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: self.webViewHeight))
         webView.delegate = self
-        webView.backgroundColor = UIColor.whiteColor()
-        try! webView.loadFileWithURL(URL!)
+        webView.backgroundColor = UIColor.white
+        try! webView.loadFile(from: url!)
         
         return webView
     }
     
-    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
         return self.webViewHeight
     }
-    
 }
 
 extension TableViewController: UIWebViewDelegate {
     
-    func webViewDidFinishLoad(webView: UIWebView) {
+    func webViewDidFinishLoad(_ webView: UIWebView) {
         
-        webView.scrollView.scrollEnabled = false
+        webView.scrollView.isScrollEnabled = false
         
         self.webViewHeight = webView.documentHeight
         
