@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 extension UIWebView {
 
@@ -24,5 +25,26 @@ extension UIWebView {
             return CGFloat(height)
         }
         return 0
+    }
+}
+
+
+extension WKWebView {
+    
+    func loadFile(from url: URL) throws {
+        
+        let string = try String(contentsOf: url, encoding: String.Encoding.utf8)
+        
+        self.loadHTMLString(string, baseURL: url.deletingLastPathComponent())
+    }
+    
+    func documentHeight(completion: @escaping (_ height: CGFloat) -> ()) {
+        
+        self.evaluateJavaScript("document.documentElement.offsetHeight") { (result, error) in
+            
+            let height = result as? CGFloat ?? 0
+            
+            completion(height)
+        }
     }
 }

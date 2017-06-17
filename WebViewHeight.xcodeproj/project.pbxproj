@@ -12,7 +12,7 @@
 		B5A097D91D2E891E00D05A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A097D81D2E891E00D05A28 /* Assets.xcassets */; };
 		B5A097DC1D2E891E00D05A28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A097DA1D2E891E00D05A28 /* LaunchScreen.storyboard */; };
 		B5A097E41D2EB24000D05A28 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A097E31D2EB24000D05A28 /* TableViewController.swift */; };
-		B5A097E61D2EB2EA00D05A28 /* UIWebView+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A097E51D2EB2EA00D05A28 /* UIWebView+Height.swift */; };
+		B5A097E61D2EB2EA00D05A28 /* WebView+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A097E51D2EB2EA00D05A28 /* WebView+Height.swift */; };
 		B5A097E81D2EB32100D05A28 /* common.css in Resources */ = {isa = PBXBuildFile; fileRef = B5A097E71D2EB32100D05A28 /* common.css */; };
 		B5A097EA1D2EB33100D05A28 /* doc.html in Resources */ = {isa = PBXBuildFile; fileRef = B5A097E91D2EB33100D05A28 /* doc.html */; };
 /* End PBXBuildFile section */
@@ -25,7 +25,7 @@
 		B5A097DB1D2E891E00D05A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5A097DD1D2E891E00D05A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5A097E31D2EB24000D05A28 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		B5A097E51D2EB2EA00D05A28 /* UIWebView+Height.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+Height.swift"; sourceTree = "<group>"; };
+		B5A097E51D2EB2EA00D05A28 /* WebView+Height.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WebView+Height.swift"; sourceTree = "<group>"; };
 		B5A097E71D2EB32100D05A28 /* common.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = common.css; sourceTree = "<group>"; };
 		B5A097E91D2EB33100D05A28 /* doc.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = doc.html; sourceTree = "<group>"; };
 		B5A097EB1D2EBD9A00D05A28 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 				B5A097DA1D2E891E00D05A28 /* LaunchScreen.storyboard */,
 				B5A097DD1D2E891E00D05A28 /* Info.plist */,
 				B5A097E31D2EB24000D05A28 /* TableViewController.swift */,
-				B5A097E51D2EB2EA00D05A28 /* UIWebView+Height.swift */,
+				B5A097E51D2EB2EA00D05A28 /* WebView+Height.swift */,
 			);
 			path = WebViewHeight;
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 			files = (
 				B5A097E41D2EB24000D05A28 /* TableViewController.swift in Sources */,
 				B5A097D21D2E891E00D05A28 /* AppDelegate.swift in Sources */,
-				B5A097E61D2EB2EA00D05A28 /* UIWebView+Height.swift in Sources */,
+				B5A097E61D2EB2EA00D05A28 /* WebView+Height.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
