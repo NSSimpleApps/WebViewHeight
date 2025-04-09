@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,10 +34,8 @@
 /* Begin PBXFrameworksBuildPhase section */
 		B5A097CB1D2E891E00D05A28 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -88,8 +86,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = WebViewHeight;
 			productName = WebViewHeight;
 			productReference = B5A097CE1D2E891E00D05A28 /* WebViewHeight.app */;
@@ -101,8 +97,9 @@
 		B5A097C61D2E891E00D05A28 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1630;
 				ORGANIZATIONNAME = NSSimpleApps;
 				TargetAttributes = {
 					B5A097CD1D2E891E00D05A28 = {
@@ -112,7 +109,6 @@
 				};
 			};
 			buildConfigurationList = B5A097C91D2E891E00D05A28 /* Build configuration list for PBXProject "WebViewHeight" */;
-			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -120,6 +116,7 @@
 				Base,
 			);
 			mainGroup = B5A097C51D2E891E00D05A28;
+			preferredProjectObjectVersion = 90;
 			productRefGroup = B5A097CF1D2E891E00D05A28 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,7 +129,6 @@
 /* Begin PBXResourcesBuildPhase section */
 		B5A097CC1D2E891E00D05A28 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				B5A097DC1D2E891E00D05A28 /* LaunchScreen.storyboard in Resources */,
 				B5A097D91D2E891E00D05A28 /* Assets.xcassets in Resources */,
@@ -140,20 +136,17 @@
 				B5A097E81D2EB32100D05A28 /* common.css in Resources */,
 				B5A097D71D2E891E00D05A28 /* Main.storyboard in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5A097CA1D2E891E00D05A28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				B5A097E41D2EB24000D05A28 /* TableViewController.swift in Sources */,
 				B5A097D21D2E891E00D05A28 /* AppDelegate.swift in Sources */,
 				B5A097E61D2EB2EA00D05A28 /* WebView+Height.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -177,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B5A097DE1D2E891E00D05A28 /* Debug */ = {
+		B5A097DE1D2E891E00D05A28 /* Debug configuration for PBXProject "WebViewHeight" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -212,6 +205,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -235,7 +229,7 @@
 			};
 			name = Debug;
 		};
-		B5A097DF1D2E891E00D05A28 /* Release */ = {
+		B5A097DF1D2E891E00D05A28 /* Release configuration for PBXProject "WebViewHeight" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -270,6 +264,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -288,33 +283,35 @@
 			};
 			name = Release;
 		};
-		B5A097E11D2E891E00D05A28 /* Debug */ = {
+		B5A097E11D2E891E00D05A28 /* Debug configuration for PBXNativeTarget "WebViewHeight" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WebViewHeight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = NSSimpleApps.WebViewHeight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
-		B5A097E21D2E891E00D05A28 /* Release */ = {
+		B5A097E21D2E891E00D05A28 /* Release configuration for PBXNativeTarget "WebViewHeight" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WebViewHeight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = NSSimpleApps.WebViewHeight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -324,19 +321,17 @@
 		B5A097C91D2E891E00D05A28 /* Build configuration list for PBXProject "WebViewHeight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B5A097DE1D2E891E00D05A28 /* Debug */,
-				B5A097DF1D2E891E00D05A28 /* Release */,
+				B5A097DE1D2E891E00D05A28 /* Debug configuration for PBXProject "WebViewHeight" */,
+				B5A097DF1D2E891E00D05A28 /* Release configuration for PBXProject "WebViewHeight" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		B5A097E01D2E891E00D05A28 /* Build configuration list for PBXNativeTarget "WebViewHeight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B5A097E11D2E891E00D05A28 /* Debug */,
-				B5A097E21D2E891E00D05A28 /* Release */,
+				B5A097E11D2E891E00D05A28 /* Debug configuration for PBXNativeTarget "WebViewHeight" */,
+				B5A097E21D2E891E00D05A28 /* Release configuration for PBXNativeTarget "WebViewHeight" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
